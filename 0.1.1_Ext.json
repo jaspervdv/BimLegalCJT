@@ -1,0 +1,53 @@
+{
+  "type": "CityJSONExtension",
+  "name": "BimLegal",
+  "description": "Extension to support BimLegal information",
+  "url": "https://raw.githubusercontent.com/jaspervdv/BimLegalCJT/master/0.1.1_Ext.json",
+  "version": "0.0.1",
+  "versionCityJSON": "1.1",
+  "extraRootProperties": {
+    "+BimLegalInfo": {
+      "type": "object",
+      "properties": {
+        "Label": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1 
+        },
+        "Documentation": {
+          "Label": "array",
+          "items": {"type": "string"},
+          "minItems": 1 
+        }
+      }
+    }
+  }, 
+  "extraAttributes": {
+    "+BimLegalLink": {
+      "type": "object",
+      "properties": {
+        "Label Gebruiks": {
+          "Label": "array",
+          "items": {"type": "int"},
+          "minItems": 1 
+        },
+        "Label Juridisch": {
+          "Label": "array",
+          "items": {"type": "int"},
+          "minItems": 1 
+        },
+        "Gebruiksdocumentatie": {
+          "Label": "array",
+          "items": {"type": "int"},
+          "minItems": 1 
+        },
+        "Juridische documentatie": {
+          "Label": "array",
+          "items": {"type": "int"},
+          "minItems": 1 
+        }
+      }
+    }
+  },
+  "extraCityObjects": {}
+}
